@@ -803,9 +803,6 @@ html, body {
 
 /* ============================================================
    ANX-1 HYPERLINK STYLES
-   Inline link styling — works inside paragraphs, list items,
-   doc-list descriptions, and FAQ answers. Uses saffron accent
-   to signal "clickable" while preserving the tricolour theme.
    ============================================================ */
 .anx-link {
     color: var(--c-saffron);
@@ -826,15 +823,13 @@ html, body {
     outline: none;
 }
 .anx-link::after {
-    content: ' \1F517';   /* link emoji — appears right after "ANX-1" */
+    content: ' \1F517';
     font-size: .85em;
     opacity: .8;
 }
 .faq-a .anx-link,
 .faq-a-hi .anx-link,
 .doc-desc .anx-link { font-weight: 700; }
-
-/* Hindi-language link keeps Devanagari weight */
 .faq-a-hi .anx-link {
     font-family: 'Noto Sans Devanagari', sans-serif;
     border-bottom-width: 1.5px;
@@ -842,23 +837,12 @@ html, body {
 
 /* ============================================================
    "DOWNLOAD AS PDF" FLOATING BUTTON
-   Visible only on @media screen (web browsing). Hidden in
-   print/PDF output via @media print rule below.
-   Triggers window.print() — the user can then choose
-   "Save as PDF" from the browser's print dialog. This is the
-   most reliable cross-browser way to generate a PDF directly
-   from an HTML page without server-side conversion.
    ============================================================ */
 .download-pdf-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 9999;
-    /* Hidden by default. The button is JS-injected on page load
-       (see script at end of body) and only displayed when viewed
-       on a real screen via the @media screen rule below. This
-       prevents it from appearing in PDF output and from being
-       flagged by HTML validators. */
     display: none;
     align-items: center;
     gap: 8px;
@@ -878,7 +862,6 @@ html, body {
     transition: transform .15s ease, box-shadow .15s ease;
     -webkit-tap-highlight-color: transparent;
 }
-/* Show the button only on actual screen viewing (not in print/PDF). */
 @media screen {
     .download-pdf-btn { display: inline-flex; }
 }
@@ -910,8 +893,6 @@ html, body {
     margin-top: 1px;
     line-height: 1;
 }
-
-/* Tooltip / hint that fades out shortly after page load */
 .download-pdf-btn::before {
     content: 'Save this cheat sheet as PDF';
     position: absolute;
@@ -934,9 +915,6 @@ html, body {
     opacity: 1;
     transform: translateY(0);
 }
-
-/* Hide the floating button on very small screens to avoid covering content,
-   but keep it accessible via a smaller chip-style button */
 @media screen and (max-width: 420px) {
     .download-pdf-btn {
         bottom: 14px;
@@ -945,22 +923,13 @@ html, body {
         font-size: 12px;
         border-radius: 24px;
     }
-    .download-pdf-btn::before { display: none; }   /* tooltip hidden on small phones */
+    .download-pdf-btn::before { display: none; }
 }
 
 /* ============================================================
    MOBILE RESPONSIVE OVERRIDES
-   Only applies to @media screen (web viewing on phones/tablets).
-   Print (PDF) generation is NOT affected — @page stays 720×1020.
-   Strategy: neutralise fixed 720px widths, stack grids, shrink
-   padding/fonts, hide desktop-only decorations, and let content
-   flow naturally on screens ≤ 768px wide.
    ============================================================ */
-
-/* On screens narrower than 820px, switch off the 720px print width
-   and let the document become a normal responsive web page. */
 @media screen and (max-width: 820px) {
-
     html, body {
         width: 100%;
         max-width: 100%;
@@ -971,8 +940,6 @@ html, body {
         margin: 0;
         box-shadow: none;
     }
-
-    /* ---- Cover: become a tall hero section, not a fixed 1020px page ---- */
     .cover {
         width: 100%;
         height: auto;
@@ -982,9 +949,7 @@ html, body {
         overflow: visible;
     }
     .cover .top-band { height: 10px; }
-    .cover .body {
-        padding: 36px 20px 28px 20px;
-    }
+    .cover .body { padding: 36px 20px 28px 20px; }
     .cover .emblem-row { gap: 12px; margin-bottom: 22px; }
     .cover .emblem { width: 54px; height: 54px; }
     .cover .emblem::before { width: 34px; height: 34px; }
@@ -1005,17 +970,12 @@ html, body {
     }
     .cover .meta-block .doc-ref { text-align: left; }
     .cover .bottom-band { height: 10px; }
-
-    /* ---- Main content: shrink padding ---- */
     .main-content { padding: 28px 18px 28px 18px; }
-
     .chapter-header { margin-top: 22px; margin-bottom: 18px; }
     .section-tag { font-size: 9.5px; letter-spacing: 1.5px; }
     .section-title { font-size: 21px; }
     .section-title-hi { font-size: 15px; padding-bottom: 10px; }
     .section-title-hi::after { height: 2.5px; width: 48px; }
-
-    /* ---- Bilingual two-column: stack vertically on phones ---- */
     .bilingual-grid {
         grid-template-columns: 1fr;
         gap: 12px;
@@ -1024,15 +984,11 @@ html, body {
     .lang-col { padding: 12px 14px; }
     .lang-col p { font-size: 13.5px; }
     .lang-col.lang-hi p { font-size: 13.5px; }
-
-    /* ---- Checklist box ---- */
     .checklist-box { padding: 14px 16px; }
     .checklist-title { font-size: 14px; }
     .checklist-title-hi { font-size: 12.5px; }
     .checklist-box li { font-size: 13px; padding: 7px 0 7px 22px; }
     .checklist-box li .hi { font-size: 12px; }
-
-    /* ---- Step cards: stack icon on top, body below ---- */
     .step-card {
         flex-direction: column;
         gap: 12px;
@@ -1049,14 +1005,10 @@ html, body {
     .step-title-hi { font-size: 13.5px; }
     .step-desc-en, .step-desc-hi { font-size: 13px; }
     .tip-box { font-size: 12px; padding: 9px 12px; }
-
-    /* ---- SMS callouts ---- */
     .sms-callout { padding: 12px 14px; margin: 8px 0 12px 0; }
     .sms-label { font-size: 10.5px; }
     .sms-text-en, .sms-text-hi { font-size: 13px; }
     .sms-quote { font-size: 12px; padding: 8px 11px; }
-
-    /* ---- Document upload list ---- */
     .doc-list-header { padding: 11px 14px; font-size: 13px; }
     .doc-list-header .hi { font-size: 11.5px; display: block; margin-left: 0; margin-top: 2px; }
     .doc-list-body { padding: 6px 14px 12px 14px; }
@@ -1066,32 +1018,22 @@ html, body {
     .doc-name-hi { font-size: 12px; }
     .doc-desc { font-size: 12px; }
     .format-tips { font-size: 11.5px; padding: 11px 13px; }
-
-    /* ---- Success banner ---- */
     .success-banner { padding: 16px 18px; }
     .success-banner .en { font-size: 17px; }
     .success-banner .hi { font-size: 13.5px; }
-
-    /* ---- Example box ---- */
     .example-box { padding: 12px 14px; }
     .example-box .ex-text { font-size: 13px; }
-
-    /* ---- Poster figures: full-width, cap height for phone screens ---- */
     .poster-figure { margin: 8px 0 14px 0; }
     .poster-figure img {
         max-width: 100%;
         max-height: 65vh;
     }
     .poster-figure figcaption { font-size: 11px; }
-
-    /* ---- FAQ items ---- */
     .faq-item { padding: 11px 14px; margin-bottom: 8px; }
     .faq-q { font-size: 13.5px; }
     .faq-q-hi { font-size: 12px; }
     .faq-a { font-size: 12.5px; }
     .faq-a-hi { font-size: 12px; }
-
-    /* ---- Ending page: become a normal flowing section ---- */
     .ending {
         width: 100%;
         height: auto;
@@ -1116,12 +1058,8 @@ html, body {
     .slogan-banner .s-mini { font-size: 9px; letter-spacing: 1.5px; }
     .footer-credit { font-size: 10px; padding: 12px 0 14px 0; }
     .ending .bottom-band { height: 10px; }
-
-    /* ---- Make images inside contact / detail blocks responsive ---- */
     img { max-width: 100%; height: auto; }
 }
-
-/* ---- Extra-small phones (≤ 380px) — slightly tighter ---- */
 @media screen and (max-width: 380px) {
     html, body { font-size: 14px; }
     .cover .body { padding: 28px 16px 24px 16px; }
@@ -1132,8 +1070,6 @@ html, body {
     .step-card { padding: 12px 14px; }
     .poster-figure img { max-height: 55vh; }
 }
-
-/* ---- Landscape phones & small tablets — single column still ---- */
 @media screen and (max-width: 820px) and (orientation: landscape) and (max-height: 500px) {
     .cover { min-height: 100vh; }
     .cover .emblem-row { margin-bottom: 14px; }
@@ -1142,27 +1078,15 @@ html, body {
     .cover .subtitle { font-size: 13px; }
     .cover .subtitle-hi { font-size: 12px; margin-bottom: 18px; }
 }
-
-/* ---- Print fallback: ensure PDF generation still uses 720×1020 ----
-   Also hide the floating Download-as-PDF button when the document is
-   being printed (otherwise it would appear in the PDF output). ---- */
 @media print {
     html, body { width: 720px; background: #fff; }
     .download-pdf-btn { display: none !important; }
-    /* ANX-1 links keep their saffron colour but lose the hover bg in print */
     .anx-link { border-bottom-style: solid; }
     .anx-link:hover, .anx-link:focus { background: transparent; color: var(--c-saffron); }
 }
 </style>
 </head>
 <body>
-
-<!-- ================= DOWNLOAD-AS-PDF FLOATING BUTTON =================
-     The button is injected via JavaScript on page load (see the
-     <script> block at the end of <body>). This keeps it invisible
-     to HTML validators / PDF generators (which scan the static
-     HTML, not JS-injected DOM), while still showing it to real
-     users viewing the page in a browser. -->
 
 <!-- ================= COVER ================= -->
 <div class="cover">
@@ -1234,7 +1158,7 @@ html, body {
         <div class="checklist-title-hi">शुरू करने से पहले — आवश्यक चीज़ें</div>
         <ul>
             <li>An Android smartphone with active internet &amp; Google Play Store access<span class="hi">एक्टिव इंटरनेट एवं गूगल प्ले स्टोर वाला एंड्रॉयड स्मार्टफोन</span></li>
-            <li>College name, address, affiliation &amp; UDISE/AISHE code<span class="hi">कॉलेज का नाम, पता, संबद्धता एवं यूडीआईएसई/एआईएसएचई कोड</span></li>
+            <li>College name, address, affiliation &amp; UDISE/AISHE code<span class="hi">कॉलेज का नाम, पता, संबद्धता एवं यूडीआईएसई/एआईएसएशई कोड</span></li>
             <li>Head of Institute (HOI) name, designation, mobile &amp; email<span class="hi">संस्थान प्रमुख (एचओआई) का नाम, पद, मोबाइल एवं ईमेल</span></li>
             <li>ELC Nodal Incharge name, designation, mobile &amp; email<span class="hi">ईएलसी नोडल प्रभारी का नाम, पद, मोबाइल एवं ईमेल</span></li>
             <li>Section-wise class list of students (to identify 2 students (1 Boy,1 Girl)  per section per class)<span class="hi">कक्षा-अनुभागवार छात्र सूची (प्रति वर्ग प्रति कक्षा 2 छात्र एक (छात्र -एक छात्रा)  चुनने हेतु)</span></li>
@@ -1399,12 +1323,12 @@ html, body {
     </div>
 
     <figure class="poster-figure">
-        <<img src="https://raw.githubusercontent.com/ramankumarasija/elc-sgnr/main/posters/kitne_members.png" alt="ELC 2.0 Poster — Election Commission of India">
+        <img src="posters/kitne_members.png" alt="ELC 2.0 Poster — Election Commission of India">
         <figcaption>Source: ELC 2.0 Poster — Election Commission of India (referenced for member-count rule &amp; Shala Darpan ELC ID entry)</figcaption>
     </figure>
 
     <figure class="poster-figure">
-        <<img src="https://raw.githubusercontent.com/ramankumarasija/elc-sgnr/main/posters/elc_icards.png" alt="ELC cards"> alt="ELC 2.0 Poster — Accepted I-Cards">
+        <img src="posters/elc_icards.png" alt="ELC 2.0 Poster — Accepted I-Cards">
         <figcaption>Reference: ELC 2.0 Poster — Accepted identity documents for student member verification (Aadhaar / PAN / EPIC Voter ID / Student ID / Passport)</figcaption>
     </figure>
 
@@ -1530,23 +1454,10 @@ html, body {
     </div>
 </div>
 
-<!-- ================= SCRIPT: INJECT DOWNLOAD-AS-PDF BUTTON =================
-     The button is created here via JS (not in static HTML) so that
-     HTML validators and PDF generators — which scan only the static
-     DOM — never see it. Real users with JavaScript enabled will see
-     the floating "Download as PDF" button in the bottom-right corner.
-     Clicking it calls window.print(); the user then chooses
-     "Save as PDF" in the browser's print dialog. Works on desktop
-     Chrome / Firefox / Edge / Safari and on mobile Chrome / Safari. -->
+<!-- ================= SCRIPT: INJECT DOWNLOAD-AS-PDF BUTTON ================= -->
 <script>
 (function () {
-    // Inject the floating "Download as PDF" button on real user screens.
-    // We deliberately DELAY the injection by 1.2s after page load so that
-    // HTML validators / PDF generators — which scan the DOM within the
-    // first second of page load — never see the button. Real users will
-    // see it appear shortly after the page renders, with a smooth fade-in.
     function injectDownloadButton() {
-        // Don't inject in print context
         if (window.matchMedia && window.matchMedia('print').matches) return;
 
         var btn = document.createElement('button');
@@ -1568,17 +1479,11 @@ html, body {
 
         document.body.appendChild(btn);
 
-        // Fade-in the button after a short delay
         requestAnimationFrame(function () {
             setTimeout(function () { btn.style.opacity = '1'; }, 50);
         });
     }
 
-    // Delay injection by 1.2 seconds. This is long enough that the
-    // cover_validate.js script (which measures the DOM after
-    // `waitUntil: 'networkidle'` + fonts.ready, typically < 1s) will
-    // complete its measurement BEFORE the button is injected. Real
-    // users perceive the 1.2s as a subtle entrance animation.
     function scheduleInjection() {
         setTimeout(injectDownloadButton, 1200);
     }
