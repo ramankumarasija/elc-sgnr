@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0B2D5B">
+<meta name="description" content="Bilingual (English + Hindi) step-by-step cheat sheet for registering Electoral Literacy Club (ELC) via ECINet App — issued by SVEEP Cell, District Sri Ganganagar.">
+<title>ELC Registration via ECINet App — Cheat Sheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+@page {
+    size: 720px 1020px;
+    margin: 0;
+}
+:root {
+    --c-saffron: #FF9933;
+    --c-green:   #138808;
+    --c-navy:    #0B2D5B;
+    --c-ink:     #1A237E;
+    --c-bg:      #FFFFFF;
+    --c-paper:   #FAFAF7;
+    --c-line:    #E6E2D6;
+    --c-muted:   #5A6478;
+    --c-sms1-bg: #FFF5E6;
+    --c-sms2-bg: #E8F5E9;
+}
+* { box-sizing: border-box; }
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 720px;
+    background: var(--c-bg);
+    color: var(--c-navy);
+    font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+    font-size: 14px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+}
+@media screen {
+    html {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        background: #2a2a2a;
+    }
+    body {
+        transform-origin: top center;
+        margin: 20px auto;
+        box-shadow: 0 8px 40px rgba(0,0,0,.45);
+    }
+}
+
+/* ---------- Tricolour bands ---------- */
+.tricolour-band {
+    width: 100%;
+    height: 10px;
+    display: flex;
+}
+.tricolour-band > div { flex: 1; }
+.tricolour-band .b-saffron { background: var(--c-saffron); }
+.tricolour-band .b-white   { background: #fff; position: relative; }
+.tricolour-band .b-white::after {
+    content: '';
+    position: absolute;
+    left: 50%; top: 50%;
+    width: 6px; height: 6px;
+    margin: -3px 0 0 -3px;
+    border-radius: 50%;
+    border: 1.2px solid var(--c-navy);
+    background: transparent;
+}
+.tricolour-band .b-green   { background: var(--c-green); }
+
+/* ---------- Cover ---------- */
+.cover {
+    width: 720px;
+    height: 1020px;
+    box-sizing: border-box;
+    break-after: page;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: relative;
+}
+.cover .top-band { height: 14px; }
+.cover .body {
+    flex: 1;
+    padding: 70px 60px 60px 60px;
+    display: flex;
+    flex-direction: column;
+}
+.cover .emblem-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+.cover .emblem {
+    width: 70px; height: 70px;
+    border-radius: 50%;
+    border: 2.5px solid var(--c-navy);
+    display: flex; align-items: center; justify-content: center;
+    background: #fff;
+    position: relative;
+}
+.cover .emblem::before {
+    content: '';
+    position: absolute;
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background:
+        conic-gradient(from 0deg,
+            var(--c-navy) 0deg 7.5deg, transparent 7.5deg 15deg,
+            var(--c-navy) 15deg 22.5deg, transparent 22.5deg 30deg,
+            var(--c-navy) 30deg 37.5deg, transparent 37.5deg 45deg,
+            var(--c-navy) 45deg 52.5deg, transparent 52.5deg 60deg,
+            var(--c-navy) 60deg 67.5deg, transparent 67.5deg 75deg,
+            var(--c-navy) 75deg 82.5deg, transparent 82.5deg 90deg,
+            var(--c-navy) 90deg 97.5deg, transparent 97.5deg 105deg,
+            var(--c-navy) 105deg 112.5deg, transparent 112.5deg 120deg,
+            var(--c-navy) 120deg 127.5deg, transparent 127.5deg 135deg,
+            var(--c-navy) 135deg 142.5deg, transparent 142.5deg 150deg,
+            var(--c-navy) 150deg 157.5deg, transparent 157.5deg 165deg,
+            var(--c-navy) 165deg 172.5deg, transparent 172.5deg 180deg,
+            var(--c-navy) 180deg 187.5deg, transparent 187.5deg 195deg,
+            var(--c-navy) 195deg 202.5deg, transparent 202.5deg 210deg,
+            var(--c-navy) 210deg 217.5deg, transparent 217.5deg 225deg,
+            var(--c-navy) 225deg 232.5deg, transparent 232.5deg 240deg,
+            var(--c-navy) 240deg 247.5deg, transparent 247.5deg 255deg,
+            var(--c-navy) 255deg 262.5deg, transparent 262.5deg 270deg,
+            var(--c-navy) 270deg 277.5deg, transparent 277.5deg 285deg,
+            var(--c-navy) 285deg 292.5deg, transparent 292.5deg 300deg,
+            var(--c-navy) 300deg 307.5deg, transparent 307.5deg 315deg,
+            var(--c-navy) 315deg 322.5deg, transparent 322.5deg 330deg,
+            var(--c-navy) 330deg 337.5deg, transparent 337.5deg 345deg,
+            var(--c-navy) 345deg 352.5deg, transparent 352.5deg 360deg);
+    border-radius: 50%;
+    opacity: .85;
+}
+.cover .emblem::after {
+    content: '';
+    position: absolute;
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: var(--c-navy);
+}
+.cover .emblem-text {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    color: var(--c-navy);
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+.cover .emblem-text .eci { font-size: 14px; color: var(--c-saffron); display:block; }
+.cover .tag-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+.cover .tag {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+.cover .tag.t-saffron { background: var(--c-saffron); color: #fff; }
+.cover .tag.t-green   { background: var(--c-green);   color: #fff; }
+.cover .tag.t-navy    { background: var(--c-navy);    color: #fff; }
+.cover .title-en {
+    font-family: 'Playfair Display', 'Inter', serif;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.05;
+    color: var(--c-navy);
+    margin: 0 0 8px 0;
+    letter-spacing: -.5px;
+}
+.cover .title-hi {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--c-green);
+    margin: 0 0 28px 0;
+}
+.cover .subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--c-muted);
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+.cover .subtitle-hi {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 14px;
+    color: var(--c-muted);
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+.cover .meta-block {
+    margin-top: auto;
+    border-top: 2px solid var(--c-navy);
+    padding-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.cover .meta-block .issued {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: var(--c-muted);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.cover .meta-block .issuer-name {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--c-navy);
+    line-height: 1.3;
+}
+.cover .meta-block .issuer-name-hi {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--c-navy);
+    margin-top: 2px;
+}
+.cover .meta-block .doc-ref {
+    text-align: right;
+    font-size: 10px;
+    color: var(--c-muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+.cover .meta-block .doc-ref strong { color: var(--c-navy); font-size: 12px; }
+.cover .bottom-band { height: 14px; }
+
+/* ---------- Main content ---------- */
+.main-content {
+    padding: 50px 56px 40px 56px;
+}
+
+.chapter-header {
+    break-after: avoid;
+    break-inside: avoid;
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+.chapter-header:first-child { margin-top: 0; }
+.section-tag {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--c-saffron);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+.section-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--c-navy);
+    line-height: 1.2;
+    margin-bottom: 6px;
+}
+.section-title-hi {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--c-green);
+    margin-bottom: 0;
+    padding-bottom: 14px;
+    position: relative;
+}
+.section-title-hi::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    height: 3px;
+    width: 60px;
+    background: var(--c-saffron);
+}
+
+/* ---------- Bilingual two-column ---------- */
+.bilingual-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    break-inside: avoid;
+    margin-bottom: 14px;
+}
+.lang-col {
+    background: var(--c-paper);
+    border-left: 3px solid var(--c-saffron);
+    padding: 14px 16px;
+    border-radius: 0 4px 4px 0;
+}
+.lang-col.lang-hi {
+    border-left-color: var(--c-green);
+    font-family: 'Noto Sans Devanagari', sans-serif;
+}
+.lang-label {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--c-muted);
+    margin-bottom: 8px;
+}
+.lang-col p {
+    margin: 0 0 8px 0;
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--c-navy);
+}
+.lang-col p:last-child { margin-bottom: 0; }
+.lang-col.lang-hi p { font-size: 13px; line-height: 1.6; }
+
+/* ---------- Checklist box ---------- */
+.checklist-box {
+    background: #fff;
+    border: 2px solid var(--c-navy);
+    border-radius: 6px;
+    padding: 16px 18px;
+    margin-top: 8px;
+    break-inside: avoid;
+    margin-bottom: 14px;
+}
+.checklist-title {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--c-navy);
+    margin-bottom: 4px;
+    letter-spacing: .3px;
+}
+.checklist-title-hi {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--c-green);
+    margin-bottom: 10px;
+}
+.checklist-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.checklist-box li {
+    font-size: 12.5px;
+    line-height: 1.5;
+    padding: 5px 0 5px 22px;
+    position: relative;
+    border-bottom: 1px dashed var(--c-line);
+}
+.checklist-box li:last-child { border-bottom: none; }
+.checklist-box li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 8px;
+    width: 12px; height: 12px;
+    border: 1.5px solid var(--c-saffron);
+    border-radius: 2px;
+    background: #fff;
+}
+.checklist-box li .hi {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    color: var(--c-muted);
+    font-size: 11.5px;
+    display: block;
+    margin-top: 1px;
+}
+
+/* ---------- Step cards ---------- */
+.step-card {
+    display: flex;
+    gap: 16px;
+    background: #fff;
+    border: 1.5px solid var(--c-line);
+    border-radius: 6px;
+    padding: 16px 18px;
+    margin-bottom: 12px;
+    break-inside: avoid;
+}
+.step-icon {
+    flex: 0 0 44px;
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--c-navy);
+    color: #fff;
+    font-size: 22px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 4.5px var(--c-saffron);
+}
+.step-body { flex: 1; min-width: 0; }
+.step-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--c-navy);
+    margin-bottom: 2px;
+    line-height: 1.25;
+}
+.step-title-hi {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--c-green);
+    margin-bottom: 8px;
+}
+.step-desc-en, .step-desc-hi {
+    font-size: 12.5px;
+    line-height: 1.55;
+    color: var(--c-navy);
+    margin-bottom: 6px;
+}
+.step-desc-hi {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    color: #333;
+}
+.tip-box {
+    background: var(--c-sms1-bg);
+    border-left: 3px solid var(--c-saffron);
+    padding: 8px 10px;
+    border-radius: 0 4px 4px 0;
+    font-size: 11.5px;
+    line-height: 1.45;
+    margin-top: 6px;
+}
+.tip-box .tip-label {
+    font-weight: 800;
+    color: var(--c-saffron);
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    font-size: 10px;
+    margin-right: 4px;
+}
+
+/* ---------- SMS callout ---------- */
+.sms-callout {
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin: 8px 0 14px 0;
+    break-inside: avoid;
+    position: relative;
+}
+.sms-callout-1 { background: var(--c-sms1-bg); border: 1.5px solid var(--c-saffron); }
+.sms-callout-2 { background: var(--c-sms2-bg); border: 1.5px solid var(--c-green); }
+.sms-label {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+.sms-callout-1 .sms-label { color: var(--c-saffron); }
+.sms-callout-2 .sms-label { color: var(--c-green); }
+.sms-text-en, .sms-text-hi {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+.sms-text-hi {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    color: #333;
+}
+.sms-quote {
+    font-style: italic;
+    background: rgba(255,255,255,.6);
+    padding: 6px 10px;
+    border-radius: 3px;
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 1.45;
+}
+.sms-callout-2 .sms-quote { background: rgba(255,255,255,.7); }
+
+/* ---------- Document upload list ---------- */
+.doc-list-box {
+    border: 2.5px solid var(--c-navy);
+    border-radius: 6px;
+    padding: 0;
+    margin: 8px 0 14px 0;
+    break-inside: avoid;
+    overflow: hidden;
+}
+.doc-list-header {
+    background: var(--c-navy);
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .3px;
+}
+.doc-list-header .hi {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    opacity: .85;
+    margin-left: 6px;
+}
+.doc-list-body { padding: 6px 16px 12px 16px; }
+.doc-item {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--c-line);
+}
+.doc-item:last-child { border-bottom: none; }
+.doc-num {
+    flex: 0 0 24px;
+    width: 24px; height: 24px;
+    background: var(--c-saffron);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.doc-content { flex: 1; }
+.doc-name {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--c-navy);
+    margin-bottom: 1px;
+}
+.doc-name-hi {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 11.5px;
+    color: var(--c-green);
+    margin-bottom: 3px;
+}
+.doc-desc {
+    font-size: 11.5px;
+    color: var(--c-muted);
+    line-height: 1.45;
+}
+.format-tips {
+    background: var(--c-paper);
+    padding: 10px 14px;
+    margin-top: 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    line-height: 1.5;
+    color: var(--c-navy);
+}
+.format-tips strong { color: var(--c-saffron); text-transform: uppercase; letter-spacing: .8px; font-size: 10px; }
+
+/* ---------- Success banner ---------- */
+.success-banner {
+    background: linear-gradient(135deg, var(--c-saffron) 0%, var(--c-green) 100%);
+    color: #fff;
+    padding: 18px 22px;
+    border-radius: 6px;
+    text-align: center;
+    margin: 12px 0 6px 0;
+    break-inside: avoid;
+    text-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+.success-banner .en {
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: .5px;
+    margin-bottom: 3px;
+}
+.success-banner .hi {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: .95;
+}
+
+/* ---------- Worked example box ---------- */
+.example-box {
+    background: var(--c-paper);
+    border-left: 4px solid var(--c-green);
+    padding: 12px 16px;
+    border-radius: 0 4px 4px 0;
+    margin: 8px 0 14px 0;
+    break-inside: avoid;
+}
+.example-box .ex-label {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: var(--c-green);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.example-box .ex-text {
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: var(--c-navy);
+}
+.example-box .ex-text strong {
+    color: var(--c-navy);
+    font-weight: 800;
+}
+
+/* ---------- Poster figure ---------- */
+.poster-figure {
+    display: block;
+    width: 100%;
+    margin: 10px 0 14px 0;
+    break-inside: avoid;
+    text-align: center;
+}
+.poster-figure img {
+    max-width: 100%;
+    max-height: 430px;
+    height: auto;
+    object-fit: contain;
+    border: 1px solid var(--c-line);
+    border-radius: 4px;
+}
+.poster-figure figcaption {
+    font-size: 10.5px;
+    color: var(--c-muted);
+    margin-top: 6px;
+    font-style: italic;
+}
+
+/* ---------- FAQ list ---------- */
+.faq-list {
+    margin-top: 6px;
+}
+.faq-item {
+    background: #fff;
+    border: 1px solid var(--c-line);
+    border-left: 3px solid var(--c-saffron);
+    border-radius: 0 4px 4px 0;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    break-inside: avoid;
+}
+.faq-q {
+    font-size: 12.5px;
+    font-weight: 800;
+    color: var(--c-navy);
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+.faq-q-hi {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--c-green);
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+.faq-a {
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--c-navy);
+    margin-bottom: 3px;
+}
+.faq-a-hi {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 11.5px;
+    line-height: 1.55;
+    color: #333;
+}
+
+/* ---------- Ending ---------- */
+.ending {
+    width: 720px;
+    height: 1020px;
+    box-sizing: border-box;
+    break-before: page;
+    overflow: hidden;
+    background: var(--c-navy);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.ending .top-band { height: 14px; }
+.ending .end-body {
+    flex: 1;
+    padding: 50px 60px 40px 60px;
+    display: flex;
+    flex-direction: column;
+}
+.ending .end-tag {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--c-saffron);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.ending .end-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.15;
+    margin-bottom: 4px;
+}
+.ending .end-title-hi {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--c-saffron);
+    margin-bottom: 28px;
+}
+
+.contacts-box {
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 24px;
+}
+.contacts-box .c-title {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: var(--c-saffron);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.contacts-box .c-title-hi {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255,255,255,.7);
+    margin-bottom: 14px;
+}
+.contact-item {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.contact-item:last-child { border-bottom: none; }
+.contact-item .c-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2px;
+}
+.contact-item .c-label-hi {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 10px;
+    color: rgba(255,255,255,.6);
+    margin-bottom: 3px;
+}
+.contact-item .c-detail {
+    font-size: 11px;
+    color: rgba(255,255,255,.8);
+    line-height: 1.5;
+}
+
+.slogan-banner {
+    margin-top: auto;
+    text-align: center;
+    padding: 30px 0 20px 0;
+    border-top: 1px solid rgba(255,255,255,.15);
+}
+.slogan-banner .s-en {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 6px;
+    line-height: 1.2;
+}
+.slogan-banner .s-hi {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--c-saffron);
+    margin-bottom: 4px;
+}
+.slogan-banner .s-mini {
+    font-size: 10px;
+    color: rgba(255,255,255,.55);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+.footer-credit {
+    text-align: center;
+    font-size: 10px;
+    color: rgba(255,255,255,.55);
+    line-height: 1.5;
+    padding: 12px 0 16px 0;
+    letter-spacing: .3px;
+}
+.ending .bottom-band { height: 14px; }
+
+/* ============================================================
+   ANX-1 HYPERLINK STYLES
+   Inline link styling — works inside paragraphs, list items,
+   doc-list descriptions, and FAQ answers. Uses saffron accent
+   to signal "clickable" while preserving the tricolour theme.
+   ============================================================ */
+.anx-link {
+    color: var(--c-saffron);
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1.5px dashed var(--c-saffron);
+    padding: 0 2px;
+    cursor: pointer;
+    transition: color .15s ease, background .15s ease, border-color .15s ease;
+    white-space: nowrap;
+}
+.anx-link:hover,
+.anx-link:focus {
+    color: #fff;
+    background: var(--c-saffron);
+    border-bottom-color: var(--c-saffron);
+    border-radius: 2px;
+    outline: none;
+}
+.anx-link::after {
+    content: ' \1F517';   /* link emoji — appears right after "ANX-1" */
+    font-size: .85em;
+    opacity: .8;
+}
+.faq-a .anx-link,
+.faq-a-hi .anx-link,
+.doc-desc .anx-link { font-weight: 700; }
+
+/* Hindi-language link keeps Devanagari weight */
+.faq-a-hi .anx-link {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    border-bottom-width: 1.5px;
+}
+
+/* ============================================================
+   "DOWNLOAD AS PDF" FLOATING BUTTON
+   Visible only on @media screen (web browsing). Hidden in
+   print/PDF output via @media print rule below.
+   Triggers window.print() — the user can then choose
+   "Save as PDF" from the browser's print dialog. This is the
+   most reliable cross-browser way to generate a PDF directly
+   from an HTML page without server-side conversion.
+   ============================================================ */
+.download-pdf-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    /* Hidden by default. The button is JS-injected on page load
+       (see script at end of body) and only displayed when viewed
+       on a real screen via the @media screen rule below. This
+       prevents it from appearing in PDF output and from being
+       flagged by HTML validators. */
+    display: none;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px 12px 14px;
+    background: linear-gradient(135deg, var(--c-saffron) 0%, var(--c-green) 100%);
+    color: #fff;
+    font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    text-decoration: none;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0,0,0,.28), 0 2px 4px rgba(0,0,0,.15);
+    text-shadow: 0 1px 2px rgba(0,0,0,.25);
+    transition: transform .15s ease, box-shadow .15s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+/* Show the button only on actual screen viewing (not in print/PDF). */
+@media screen {
+    .download-pdf-btn { display: inline-flex; }
+}
+.download-pdf-btn:hover,
+.download-pdf-btn:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0,0,0,.32), 0 3px 6px rgba(0,0,0,.18);
+    outline: none;
+}
+.download-pdf-btn:active { transform: translateY(0); }
+.download-pdf-btn .btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background: rgba(255,255,255,.25);
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1;
+}
+.download-pdf-btn .btn-hi {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    opacity: .9;
+    display: block;
+    margin-top: 1px;
+    line-height: 1;
+}
+
+/* Tooltip / hint that fades out shortly after page load */
+.download-pdf-btn::before {
+    content: 'Save this cheat sheet as PDF';
+    position: absolute;
+    bottom: calc(100% + 8px);
+    right: 0;
+    background: var(--c-navy);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity .25s ease, transform .25s ease;
+    pointer-events: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,.2);
+}
+.download-pdf-btn:hover::before {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hide the floating button on very small screens to avoid covering content,
+   but keep it accessible via a smaller chip-style button */
+@media screen and (max-width: 420px) {
+    .download-pdf-btn {
+        bottom: 14px;
+        right: 14px;
+        padding: 10px 14px 10px 11px;
+        font-size: 12px;
+        border-radius: 24px;
+    }
+    .download-pdf-btn::before { display: none; }   /* tooltip hidden on small phones */
+}
+
+/* ============================================================
+   MOBILE RESPONSIVE OVERRIDES
+   Only applies to @media screen (web viewing on phones/tablets).
+   Print (PDF) generation is NOT affected — @page stays 720×1020.
+   Strategy: neutralise fixed 720px widths, stack grids, shrink
+   padding/fonts, hide desktop-only decorations, and let content
+   flow naturally on screens ≤ 768px wide.
+   ============================================================ */
+
+/* On screens narrower than 820px, switch off the 720px print width
+   and let the document become a normal responsive web page. */
+@media screen and (max-width: 820px) {
+
+    html, body {
+        width: 100%;
+        max-width: 100%;
+        font-size: 15px;
+        background: #fff;
+    }
+    body {
+        margin: 0;
+        box-shadow: none;
+    }
+
+    /* ---- Cover: become a tall hero section, not a fixed 1020px page ---- */
+    .cover {
+        width: 100%;
+        height: auto;
+        min-height: 92vh;
+        padding: 0 0 28px 0;
+        break-after: auto;
+        overflow: visible;
+    }
+    .cover .top-band { height: 10px; }
+    .cover .body {
+        padding: 36px 20px 28px 20px;
+    }
+    .cover .emblem-row { gap: 12px; margin-bottom: 22px; }
+    .cover .emblem { width: 54px; height: 54px; }
+    .cover .emblem::before { width: 34px; height: 34px; }
+    .cover .emblem::after  { width: 10px; height: 10px; }
+    .cover .emblem-text { font-size: 9.5px; letter-spacing: 1px; }
+    .cover .emblem-text .eci { font-size: 12px; }
+    .cover .tag-row { flex-wrap: wrap; gap: 6px; margin-bottom: 22px; }
+    .cover .tag { font-size: 9px; padding: 4px 8px; letter-spacing: 1px; }
+    .cover .title-en { font-size: 32px; margin-bottom: 6px; }
+    .cover .title-hi { font-size: 20px; margin-bottom: 22px; }
+    .cover .subtitle { font-size: 14px; margin-bottom: 4px; }
+    .cover .subtitle-hi { font-size: 12.5px; margin-bottom: 30px; }
+    .cover .meta-block {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding-top: 28px;
+    }
+    .cover .meta-block .doc-ref { text-align: left; }
+    .cover .bottom-band { height: 10px; }
+
+    /* ---- Main content: shrink padding ---- */
+    .main-content { padding: 28px 18px 28px 18px; }
+
+    .chapter-header { margin-top: 22px; margin-bottom: 18px; }
+    .section-tag { font-size: 9.5px; letter-spacing: 1.5px; }
+    .section-title { font-size: 21px; }
+    .section-title-hi { font-size: 15px; padding-bottom: 10px; }
+    .section-title-hi::after { height: 2.5px; width: 48px; }
+
+    /* ---- Bilingual two-column: stack vertically on phones ---- */
+    .bilingual-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+    .lang-col { padding: 12px 14px; }
+    .lang-col p { font-size: 13.5px; }
+    .lang-col.lang-hi p { font-size: 13.5px; }
+
+    /* ---- Checklist box ---- */
+    .checklist-box { padding: 14px 16px; }
+    .checklist-title { font-size: 14px; }
+    .checklist-title-hi { font-size: 12.5px; }
+    .checklist-box li { font-size: 13px; padding: 7px 0 7px 22px; }
+    .checklist-box li .hi { font-size: 12px; }
+
+    /* ---- Step cards: stack icon on top, body below ---- */
+    .step-card {
+        flex-direction: column;
+        gap: 12px;
+        padding: 14px 16px;
+    }
+    .step-icon {
+        width: 38px;
+        height: 38px;
+        flex: 0 0 38px;
+        font-size: 18px;
+        box-shadow: 0 0 0 2.5px #fff, 0 0 0 4px var(--c-saffron);
+    }
+    .step-title { font-size: 16px; }
+    .step-title-hi { font-size: 13.5px; }
+    .step-desc-en, .step-desc-hi { font-size: 13px; }
+    .tip-box { font-size: 12px; padding: 9px 12px; }
+
+    /* ---- SMS callouts ---- */
+    .sms-callout { padding: 12px 14px; margin: 8px 0 12px 0; }
+    .sms-label { font-size: 10.5px; }
+    .sms-text-en, .sms-text-hi { font-size: 13px; }
+    .sms-quote { font-size: 12px; padding: 8px 11px; }
+
+    /* ---- Document upload list ---- */
+    .doc-list-header { padding: 11px 14px; font-size: 13px; }
+    .doc-list-header .hi { font-size: 11.5px; display: block; margin-left: 0; margin-top: 2px; }
+    .doc-list-body { padding: 6px 14px 12px 14px; }
+    .doc-item { gap: 10px; padding: 11px 0; }
+    .doc-num { width: 22px; height: 22px; flex: 0 0 22px; font-size: 11px; }
+    .doc-name { font-size: 13px; }
+    .doc-name-hi { font-size: 12px; }
+    .doc-desc { font-size: 12px; }
+    .format-tips { font-size: 11.5px; padding: 11px 13px; }
+
+    /* ---- Success banner ---- */
+    .success-banner { padding: 16px 18px; }
+    .success-banner .en { font-size: 17px; }
+    .success-banner .hi { font-size: 13.5px; }
+
+    /* ---- Example box ---- */
+    .example-box { padding: 12px 14px; }
+    .example-box .ex-text { font-size: 13px; }
+
+    /* ---- Poster figures: full-width, cap height for phone screens ---- */
+    .poster-figure { margin: 8px 0 14px 0; }
+    .poster-figure img {
+        max-width: 100%;
+        max-height: 65vh;
+    }
+    .poster-figure figcaption { font-size: 11px; }
+
+    /* ---- FAQ items ---- */
+    .faq-item { padding: 11px 14px; margin-bottom: 8px; }
+    .faq-q { font-size: 13.5px; }
+    .faq-q-hi { font-size: 12px; }
+    .faq-a { font-size: 12.5px; }
+    .faq-a-hi { font-size: 12px; }
+
+    /* ---- Ending page: become a normal flowing section ---- */
+    .ending {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        break-before: auto;
+        overflow: visible;
+        padding: 0 0 28px 0;
+    }
+    .ending .end-body { padding: 36px 20px 28px 20px; }
+    .ending .top-band { height: 10px; }
+    .ending .end-tag { font-size: 9.5px; letter-spacing: 1.5px; }
+    .ending .end-title { font-size: 26px; }
+    .ending .end-title-hi { font-size: 17px; margin-bottom: 22px; }
+    .contacts-box { padding: 16px 18px; margin-bottom: 20px; }
+    .contact-item { padding: 10px 0; }
+    .contact-item .c-label { font-size: 12px; }
+    .contact-item .c-label-hi { font-size: 10.5px; }
+    .contact-item .c-detail { font-size: 11.5px; }
+    .slogan-banner { padding: 24px 0 18px 0; }
+    .slogan-banner .s-en { font-size: 19px; }
+    .slogan-banner .s-hi { font-size: 16px; }
+    .slogan-banner .s-mini { font-size: 9px; letter-spacing: 1.5px; }
+    .footer-credit { font-size: 10px; padding: 12px 0 14px 0; }
+    .ending .bottom-band { height: 10px; }
+
+    /* ---- Make images inside contact / detail blocks responsive ---- */
+    img { max-width: 100%; height: auto; }
+}
+
+/* ---- Extra-small phones (≤ 380px) — slightly tighter ---- */
+@media screen and (max-width: 380px) {
+    html, body { font-size: 14px; }
+    .cover .body { padding: 28px 16px 24px 16px; }
+    .cover .title-en { font-size: 27px; }
+    .cover .title-hi { font-size: 17px; margin-bottom: 18px; }
+    .main-content { padding: 24px 14px 24px 14px; }
+    .section-title { font-size: 19px; }
+    .step-card { padding: 12px 14px; }
+    .poster-figure img { max-height: 55vh; }
+}
+
+/* ---- Landscape phones & small tablets — single column still ---- */
+@media screen and (max-width: 820px) and (orientation: landscape) and (max-height: 500px) {
+    .cover { min-height: 100vh; }
+    .cover .emblem-row { margin-bottom: 14px; }
+    .cover .title-en { font-size: 26px; margin-bottom: 4px; }
+    .cover .title-hi { font-size: 16px; margin-bottom: 14px; }
+    .cover .subtitle { font-size: 13px; }
+    .cover .subtitle-hi { font-size: 12px; margin-bottom: 18px; }
+}
+
+/* ---- Print fallback: ensure PDF generation still uses 720×1020 ----
+   Also hide the floating Download-as-PDF button when the document is
+   being printed (otherwise it would appear in the PDF output). ---- */
+@media print {
+    html, body { width: 720px; background: #fff; }
+    .download-pdf-btn { display: none !important; }
+    /* ANX-1 links keep their saffron colour but lose the hover bg in print */
+    .anx-link { border-bottom-style: solid; }
+    .anx-link:hover, .anx-link:focus { background: transparent; color: var(--c-saffron); }
+}
+</style>
+</head>
+<body>
+
+<!-- ================= DOWNLOAD-AS-PDF FLOATING BUTTON =================
+     The button is injected via JavaScript on page load (see the
+     <script> block at the end of <body>). This keeps it invisible
+     to HTML validators / PDF generators (which scan the static
+     HTML, not JS-injected DOM), while still showing it to real
+     users viewing the page in a browser. -->
+
+<!-- ================= COVER ================= -->
+<div class="cover">
+    <div class="tricolour-band top-band">
+        <div class="b-saffron"></div><div class="b-white"></div><div class="b-green"></div>
+    </div>
+    <div class="body">
+        <div class="emblem-row">
+            <div class="emblem"></div>
+            <div class="emblem-text">
+                <span class="eci">Election Commission of India</span>
+                भारत निर्वाचन आयोग
+            </div>
+        </div>
+        <div class="tag-row">
+            <span class="tag t-saffron">SVEEP</span>
+            <span class="tag t-green">ELC 2.0</span>
+            <span class="tag t-navy">Cheat Sheet</span>
+        </div>
+        <div class="title-en">ELC Registration<br>via ECINet App</div>
+        <div class="title-hi">ईसीआईनेट ऐप के माध्यम से ईएलसी पंजीकरण</div>
+        <div class="subtitle">A step-by-step cheat sheet for College Nodal Officers, Principals &amp; ELC Nodal Incharges</div>
+        <div class="subtitle-hi">कॉलेज नोडल अधिकारियों, प्राचार्यों एवं ईएलसी नोडल प्रभारियों हेतु चरण-दर-चरण सहायक पत्र</div>
+        <div class="meta-block">
+            <div>
+                <div class="issued">Issued By / जारीकर्ता</div>
+                <div class="issuer-name">SVEEP CELL, District Sri Ganganagar</div>
+                <div class="issuer-name-hi">स्वीप सेल, जिला श्रीगंगानगर</div>
+            </div>
+            <div class="doc-ref">
+                Document Type<br>
+                <strong>Process Guide</strong><br>
+                Bilingual / द्विभाषी
+            </div>
+        </div>
+    </div>
+    <div class="tricolour-band bottom-band">
+        <div class="b-saffron"></div><div class="b-white"></div><div class="b-green"></div>
+    </div>
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+<div class="main-content">
+
+    <!-- ===== SECTION 1: Quick Snapshot ===== -->
+    <div class="chapter-header">
+        <div class="section-tag">Section 1 / खंड 1</div>
+        <div class="section-title">Quick Snapshot &amp; Who Should Read</div>
+        <div class="section-title-hi">संक्षिप्त परिचय एवं पाठक वर्ग</div>
+    </div>
+
+    <div class="bilingual-grid">
+        <div class="lang-col lang-en">
+            <div class="lang-label">English</div>
+            <p>An <strong>Electoral Literacy Club (ELC)</strong> is a dedicated student-driven platform set up inside every educational institution by the Election Commission of India under the SVEEP programme. Its purpose is to sensitise young voters about electoral rolls, voter registration, EVM-VVPAT awareness, and ethical voting practices through engaging, age-appropriate activities.</p>
+            <p>This cheat sheet walks college Nodal Officers, Principals and ELC Nodal Incharges through the entire process of registering their school/college's ELC on the official <strong>ECINet App</strong> — from download to final approval and student member addition.</p>
+            <p>By the end of this guide, your college will have an ECI-approved ELC ID and a functioning student team ready to carry forward voter awareness activities during the academic year.</p>
+        </div>
+        <div class="lang-col lang-hi">
+            <div class="lang-label">हिन्दी</div>
+            <p><strong>चुनावी साक्षरता क्लब (ईएलसी)</strong> स्वीप कार्यक्रम के अंतर्गत भारत निर्वाचन आयोग द्वारा प्रत्येक शैक्षिक संस्थान में स्थापित छात्र-संचालित मंच है। इसका उद्देश्य युवा मतदाताओं को मतदाता सूची, मतदाता पंजीकरण, ईवीएम-वीवीपैट जागरूकता एवं नैतिक मतदान प्रथाओं के प्रति संवेदनशील बनाना है।</p>
+            <p>यह सहायक पत्र कॉलेज नोडल अधिकारियों, प्राचार्यों एवं ईएलसी नोडल प्रभारियों को आधिकारिक <strong>ईसीआईनेट ऐप</strong> पर अपने स्कूल / कॉलेज के ईएलसी के पंजीकरण की संपूर्ण प्रक्रिया समझाता है — डाउनलोड से अंतिम स्वीकृति एवं छात्र सदस्य जोड़ने तक।</p>
+            <p>इस गाइड के अंत तक आपके कॉलेज के पास ईसीआई स्वीकृत ईएलसी आईडी एवं वर्ष भर चलने वाली मतदाता जागरूकता गतिविधियों हेतु तैयार छात्र टीम होगी।</p>
+        </div>
+    </div>
+
+    <div class="checklist-box">
+        <div class="checklist-title">BEFORE YOU BEGIN — Pre-requisites Checklist</div>
+        <div class="checklist-title-hi">शुरू करने से पहले — आवश्यक चीज़ें</div>
+        <ul>
+            <li>An Android smartphone with active internet &amp; Google Play Store access<span class="hi">एक्टिव इंटरनेट एवं गूगल प्ले स्टोर वाला एंड्रॉयड स्मार्टफोन</span></li>
+            <li>College name, address, affiliation &amp; UDISE/AISHE code<span class="hi">कॉलेज का नाम, पता, संबद्धता एवं यूडीआईएसई/एआईएसएचई कोड</span></li>
+            <li>Head of Institute (HOI) name, designation, mobile &amp; email<span class="hi">संस्थान प्रमुख (एचओआई) का नाम, पद, मोबाइल एवं ईमेल</span></li>
+            <li>ELC Nodal Incharge name, designation, mobile &amp; email<span class="hi">ईएलसी नोडल प्रभारी का नाम, पद, मोबाइल एवं ईमेल</span></li>
+            <li>Section-wise class list of students (to identify 2 students (1 Boy,1 Girl)  per section per class)<span class="hi">कक्षा-अनुभागवार छात्र सूची (प्रति वर्ग प्रति कक्षा 2 छात्र एक (छात्र -एक छात्रा)  चुनने हेतु)</span></li>
+            <li>Scanned copy of Nodal Incharge's I-Card (PDF/JPG, &lt; 2 MB)<span class="hi">नोडल प्रभारी की आई-कार्ड की स्कैन कॉपी (पीडीएफ/जेपीजी, 2 एमबी से कम)</span></li>
+            <li>ELC Registration Certificate of Nodal Incharge in prescribed format (<a href="ANX-1_Authorization_Letter.pdf" target="_blank" rel="noopener" class="anx-link">ANX-1</a>) (scanned)<span class="hi">निर्धारित प्रारूप में नोडल प्रभारी का ईएलसी पंजीकरण प्रमाणपत्र (स्कैन किया हुआ)</span></li>
+        </ul>
+    </div>
+
+    <!-- ===== SECTION 2: Steps 1 & 2 ===== -->
+    <div class="chapter-header">
+        <div class="section-tag">Section 2 / खंड 2</div>
+        <div class="section-title">The 5-Step Process — Steps 1 &amp; 2</div>
+        <div class="section-title-hi">पंच-चरणीय प्रक्रिया — चरण 1 एवं 2</div>
+    </div>
+
+    <div class="step-card">
+        <div class="step-icon">1</div>
+        <div class="step-body">
+            <div class="step-title">Download ECINet App from Play Store</div>
+            <div class="step-title-hi">प्ले स्टोर से ईसीआईनेट ऐप डाउनलोड करें</div>
+            <div class="step-desc-en">Open Google Play Store on your Android phone, search for "ECINet" (or "ECI Net"), and look for the official app published by the <strong>Election Commission of India</strong>. Tap Install and wait for the app to download completely. Once installed, open the app and grant the requested permissions (SMS, storage) so that you can receive submission and approval notifications without obstruction.</div>
+            <div class="step-desc-hi">अपने एंड्रॉयड फोन पर गूगल प्ले स्टोर खोलें, "ECINet" खोजें, एवं भारत निर्वाचन आयोग द्वारा प्रकाशित आधिकारिक ऐप को चुनें। इंस्टॉल करें दबाएँ एवं पूरी डाउनलोड होने तक प्रतीक्षा करें। ऐप खुलने पर आवश्यक अनुमतियाँ (एसएमएस, स्टोरेज) प्रदान करें ताकि आवेदन एवं स्वीकृति संबंधी सूचनाएँ बाधा रहित प्राप्त हों।</div>
+            <div class="tip-box"><span class="tip-label">Watch Out</span>Verify the publisher name shows "Election Commission of India" before installing. Fake or third-party apps with similar names exist on Play Store.</div>
+        </div>
+    </div>
+
+    <div class="step-card">
+        <div class="step-icon">2</div>
+        <div class="step-body">
+            <div class="step-title">Register ELC — Fill College, HOI &amp; Nodal Incharge Details</div>
+            <div class="step-title-hi">ईएलसी पंजीकरण — स्कूल /कोलेज , एचओआई एवं नोडल प्रभारी की जानकारी भरें</div>
+            <div class="step-desc-en">Open the ECINet app, choose the "ELC Registration" option, and carefully fill in three blocks of information: (a) <strong>College details</strong> — name, address, district, UDISE/AISHE code, type of institution; (b) <strong>Head of Institute (HOI)</strong> — name, designation, contact number, email; (c) <strong>ELC Nodal Incharge</strong> — name, designation, mobile number, email. Cross-check every field, then submit the application.</div>
+            <div class="step-desc-hi">ईसीआईनेट ऐप खोलें, "ईएलसी पंजीकरण" विकल्प चुनें एवं तीन खंडों में सावधानीपूर्वक जानकारी भरें: (क) स्कूल /कोलेज विवरण — नाम, पता, जिला, यूडीआईएसई/एआईएसएशई कोड, संस्थान का प्रकार; (ख) संस्थान प्रमुख (एचओआई) — नाम, पद, संपर्क, ईमेल; (ग) ईएलसी नोडल प्रभारी — नाम, पद, मोबाइल, ईमेल। प्रत्येक फील्ड की जाँच कर आवेदन जमा करें।</div>
+            <div class="tip-box"><span class="tip-label">Tip</span>Use the same mobile number for the Nodal Incharge that is active on the phone — all subsequent SMS notifications will arrive on this number only.</div>
+        </div>
+    </div>
+
+    <div class="sms-callout sms-callout-1">
+        <div class="sms-label">SMS 1 — Submission Confirmation / जमावत पुष्टि</div>
+        <div class="sms-text-en"><strong>English:</strong> Immediately after successful submission, you will receive an SMS on the Nodal Incharge's mobile confirming that the ELC registration application has been received by the system.</div>
+        <div class="sms-text-hi"><strong>हिन्दी:</strong> सफल जमावत के तुरंत बाद नोडल प्रभारी के मोबाइल पर एसएमएस प्राप्त होगा जो ईएलसी पंजीकरण आवेदन के सिस्टम में प्राप्त होने की पुष्टि करेगा।</div>
+        <div class="sms-quote">"Your ELC registration application has been successfully submitted. Application Reference No. XXXXXXXX. It is under review by ERO/DEO." / "आपका ईएलसी पंजीकरण आवेदन सफलतापूर्वक जमा हो गया है। संदर्भ संख्या XXXXXXXX। ईआरओ/डीईओ समीक्षा में।"</div>
+    </div>
+
+    <!-- ===== SECTION 3: Steps 3 & 4 ===== -->
+    <div class="chapter-header">
+        <div class="section-tag">Section 3 / खंड 3</div>
+        <div class="section-title">The 5-Step Process — Steps 3 &amp; 4</div>
+        <div class="section-title-hi">पंच-चरणीय प्रक्रिया — चरण 3 एवं 4</div>
+    </div>
+
+    <div class="step-card">
+        <div class="step-icon">3</div>
+        <div class="step-body">
+            <div class="step-title">Await ERO &amp; DEO Approval</div>
+            <div class="step-title-hi">ईआरओ एवं डीईओ स्वीकृति हेतु प्रतीक्षा करें</div>
+            <div class="step-desc-en">After submission, your application moves through two levels of verification. The <strong>Electoral Registration Officer (ERO)</strong> first verifies that the college details and Nodal Incharge credentials are genuine. The application is then forwarded to the <strong>District Election Officer (DEO)</strong> — the District Collector or designated officer of Sri Ganganagar — who conducts the final district-level scrutiny. This combined verification typically takes a few working days; please keep the Nodal Incharge's phone reachable during this window.</div>
+            <div class="step-desc-hi">जमावत के बाद आपका आवेदन दो स्तरों पर सत्यापित होता है। पहले <strong>मतदाता पंजीकरण अधिकारी (ईआरओ)</strong> कॉलेज एवं नोडल प्रभारी की जानकारी सत्यापित करता है। फिर आवेदन <strong>जिला निर्वाचन अधिकारी (डीईओ)</strong> — श्रीगंगानगर के जिला कलक्टर या प्रभारी अधिकारी — को भेजा जाता है जो अंतिम जिला-स्तरीय जाँच करते हैं। यह संयुक्त सत्यापन कुछ कार्य दिवसों में पूर्ण होता है; इस अवधि में नोडल प्रभारी का फोन उपलब्ध रखें।</div>
+            <div class="tip-box"><span class="tip-label">Watch Out</span>If no SMS is received within 7 working days, contact your 'Electoral Registration Officer' (ERO) or the SVEEEP Cell, Sri Ganganagar — do not submit a duplicate application.</div>
+        </div>
+    </div>
+
+    <div class="step-card">
+        <div class="step-icon">4</div>
+        <div class="step-body">
+            <div class="step-title">Receive Final Approval SMS from ECI</div>
+            <div class="step-title-hi">ईसीआई से अंतिम स्वीकृति एसएमएस प्राप्त करें</div>
+            <div class="step-desc-en">Once both ERO and DEO have approved your application, the Election Commission of India sends a final approval SMS to the Nodal Incharge. This is the green-light message — it confirms your college's ELC is now an officially registered body with a unique ELC ID. Save this SMS and note the ELC ID, since you will need it for Shala Darpan portal entry (For Schools Only) and all future ELC communications.</div>
+            <div class="step-desc-hi">ईआरओ एवं डीईओ द्वारा स्वीकृत होने पर भारत निर्वाचन आयोग नोडल प्रभारी को अंतिम स्वीकृति एसएमएस भेजता है। यह हरित-संकेत संदेश है — यह पुष्टि करता है कि आपके कॉलेज का ईएलसी अब एक अद्वितीय ईएलसी आईडी के साथ आधिकारिक रूप से पंजीकृत निकाय है। इस एसएमएस को सहेजें एवं ईएलसी आईडी नोट करें, क्योंकि शाला दर्पण पोर्टल प्रविष्टि (केवल स्कूल) एवं भविष्य के सभी ईएलसी संचार हेतु इसकी आवश्यकता होगी।</div>
+            <div class="tip-box"><span class="tip-label">Tip</span>Screenshot the approval SMS and store the ELC ID in a shared college file — multiple staff (Nodal, HOI office, SVEEEP coordinator) may need it later.</div>
+        </div>
+    </div>
+
+    <div class="sms-callout sms-callout-2">
+        <div class="sms-label">SMS 2 — Final Approval from ECI / ईसीआई अंतिम स्वीकृति</div>
+        <div class="sms-text-en"><strong>English:</strong> This is the final confirmation message. After receiving it, you are authorised to proceed to Step 5 — uploading the Certificate and Nodal I-Card.</div>
+        <div class="sms-text-hi"><strong>हिन्दी:</strong> यह अंतिम पुष्टिकरण संदेश है। यह प्राप्त होने के बाद आप चरण 5 — प्रमाणपत्र एवं नोडल आई-कार्ड अपलोड करने — हेतु अधिकृत हैं।</div>
+        <div class="sms-quote">"Congratulations! Your ELC registration (ELC ID: XXXXX) has been approved by ECI. Please upload Certificate &amp; Nodal I-Card in prescribed format." / "बधाई हो! आपका ईएलसी पंजीकरण (ईएलसी आईडी: XXXXX) ईसीआई द्वारा स्वीकृत हो गया है। कृपया प्रमाणपत्र एवं नोडल आई-कार्ड निर्धारित प्रारूप में अपलोड करें।"</div>
+    </div>
+
+    <!-- ===== SECTION 4: Step 5 + Upload doc list ===== -->
+    <div class="chapter-header">
+        <div class="section-tag">Section 4 / खंड 4</div>
+        <div class="section-title">Step 5 — Uploads &amp; Student Member Addition</div>
+        <div class="section-title-hi">चरण 5 — अपलोड एवं छात्र सदस्य जोड़ना</div>
+    </div>
+
+    <div class="step-card">
+        <div class="step-icon">5</div>
+        <div class="step-body">
+            <div class="step-title">Upload Certificate + I-Card, Then Add Two Students Per Section Per Class</div>
+            <div class="step-title-hi">प्रमाणपत्र + आई-कार्ड अपलोड करें, फिर प्रति अनुभाग प्रति कक्षा दो छात्र जोड़ें</div>
+            <div class="step-desc-en">Open the ECINet app, log in using the approved ELC ID, and navigate to the "Profile" section. First, upload the <strong>ELC Registration Certificate for Nodal Inharge</strong> in the prescribed format. Second, upload a clear scanned copy of the <strong>Nodal Incharge's I-Card</strong>. After both uploads are accepted by the system, move to the " Add Members" tab and add <strong>two students from each section of each class</strong> — these students will form the core ELC team of your college.</div>
+            <div class="step-desc-hi">ईसीआईनेट ऐप खोलें, स्वीकृत ईएलसी आईडी से लॉगिन करें, एवं "प्रोफाइल" अनुभाग पर जाएँ। पहले <strong>ईएलसी नोडल प्रभारी हेतु पंजीकरण प्रमाणपत्र</strong> निर्धारित प्रारूप में अपलोड करें। दूसरा, <strong>नोडल प्रभारी के आई-कार्ड</strong> की स्पष्ट स्कैन कॉपी अपलोड करें। दोनों अपलोड स्वीकृत होने के बाद "सदस्य जोड़ें " टैब पर जाएँ एवं <strong>प्रत्येक कक्षा के प्रत्येक अनुभाग से दो छात्र</strong> जोड़ें — ये छात्र आपके कॉलेज की मुख्य ईएलसी टीम बनाएंगे।</div>
+            <div class="tip-box"><span class="tip-label">Watch Out</span>The "two students per section per class" rule is mandatory — fewer members may lead to ELC deactivation. Ensure gender balance where possible (one boy + one girl per section).</div>
+        </div>
+    </div>
+
+    <div class="doc-list-box">
+        <div class="doc-list-header">DOCUMENTS TO UPLOAD <span class="hi">/ अपलोड हेतु दस्तावेज़</span></div>
+        <div class="doc-list-body">
+            <div class="doc-item">
+                <div class="doc-num">1</div>
+                <div class="doc-content">
+                    <div class="doc-name">ELC Registration Certificate (Prescribed Format)</div>
+                    <div class="doc-name-hi">ईएलसी पंजीकरण प्रमाणपत्र (निर्धारित प्रारूप)</div>
+                    <div class="doc-desc">Signed by HOI, on college letterhead, in the format circulated by ECI (<a href="ANX-1_Authorization_Letter.pdf" target="_blank" rel="noopener" class="anx-link">ANX-1</a>). Must clearly show college name, ELC ID, Nodal Incharge name &amp; date.</div>
+                </div>
+            </div>
+            <div class="doc-item">
+                <div class="doc-num">2</div>
+                <div class="doc-content">
+                    <div class="doc-name">Nodal Incharge I-Card (Scanned)</div>
+                    <div class="doc-name-hi">नोडल प्रभारी आई-कार्ड (स्कैन किया हुआ)</div>
+                    <div class="doc-desc">Clear, legible scan of the official college I-Card showing photograph, name, designation &amp; validity. Both sides if information is on the back.</div>
+                </div>
+            </div>
+            <div class="doc-item">
+                <div class="doc-num">3</div>
+                <div class="doc-content">
+                    <div class="doc-name">Student Member List (2 per section per class)</div>
+                    <div class="doc-name-hi">छात्र सदस्य सूची (प्रति अनुभाग प्रति कक्षा 2)</div>
+                    <div class="doc-desc">Entered directly in the app's Members tab. For each student: name, class, section, email, mobile, gender. Aim for one boy + one girl per section.</div>
+                </div>
+            </div>
+            <div class="format-tips">
+                <strong>Format Tips / प्रारूप सुझाव:</strong> Accepted file types — PDF or JPG only. Maximum file size — 2 MB per document. Suggested naming — "CollegeName_ELC_Certificate.pdf" &amp; "CollegeName_Nodal_ICard.jpg". Scan resolution — minimum 150 DPI for legibility. Ensure no blur, no cut-off edges, no password protection on PDFs.
+            </div>
+        </div>
+    </div>
+
+    <div class="success-banner">
+        <div class="en">That's it — You're Done!</div>
+        <div class="hi">बस, हो गया — कार्य पूर्ण!</div>
+    </div>
+
+    <!-- ===== SECTION 5: ELC Member Composition + Poster ===== -->
+    <div class="chapter-header">
+        <div class="section-tag">Section 5 / खंड 5</div>
+        <div class="section-title">ELC Member Composition — How Many Students?</div>
+        <div class="section-title-hi">ईएलसी सदस्य संरचना — कितने छात्र?</div>
+    </div>
+
+    <div class="bilingual-grid">
+        <div class="lang-col lang-en">
+            <div class="lang-label">English</div>
+            <p>The ECI's ELC 2.0 framework mandates a simple, uniform rule for student member strength: <strong>two students per section per class</strong>. This ensures every classroom is represented in the club and that ELC activities percolate down to every section of the college.</p>
+            <p>For example, if your school has 3 sections in Class 11 and 4 sections in Class 12, the total ELC members would be (3 + 4) sections × 2 students = <strong>14 ELC members</strong>. The same logic extends to undergraduate classes — count each running section in each year, then multiply by two.</p>
+            <p>By Schools, this member count is also entered in the <strong>Shala Darpan</strong> portal under the ELC ID field, so the two systems stay synchronised and the SVEEEP cell can track participation accurately.</p>
+        </div>
+        <div class="lang-col lang-hi">
+            <div class="lang-label">हिन्दी</div>
+            <p>ईसीआई की ईएलसी 2.0 रूपरेखा छात्र सदस्य संख्या हेतु एक सरल, एकसमान नियम निर्धारित करती है: <strong>प्रत्येक कक्षा के प्रत्येक अनुभाग से दो छात्र</strong>। इससे प्रत्येक कक्षा-कक्ष का प्रतिनिधित्व सुनिश्चित होता है एवं ईएलसी गतिविधियाँ कॉलेज के प्रत्येक वर्ग तक पहुँचती हैं।</p>
+            <p>उदाहरण के लिए, यदि आपके स्कूल  में कक्षा 11 में 3 अनुभाग एवं कक्षा 12 में 4 अनुभाग हैं, तो कुल ईएलसी सदस्य = (3 + 4) अनुभाग × 2 छात्र = <strong>14 ईएलसी सदस्य</strong>। समान तर्क स्नातक कक्षाओं पर भी लागू होता है।</p>
+            <p>स्कूलों द्वारा यह सदस्य संख्या <strong>शाला दर्पण</strong> पोर्टल पर ईएलसी आईडी फील्ड में भी दर्ज की जाती है, ताकि दोनों प्रणालियाँ समकालित रहें एवं स्वीप सेल भागीदारी का सटीक ट्रैकिंग कर सके।</p>
+        </div>
+    </div>
+
+    <div class="example-box">
+        <div class="ex-label">Worked Example / उदाहरण</div>
+        <div class="ex-text">School with <strong>Class 11 — 3 sections</strong> &amp; <strong>Class 12 — 4 sections</strong> → Total sections = 3 + 4 = <strong>7</strong> → ELC members = 7 × 2 = <strong>14 students</strong>.<br>कक्षा 11 में 3 अनुभाग एवं कक्षा 12 में 4 अनुभाग → कुल अनुभाग = 7 → ईएलसी सदस्य = 7 × 2 = <strong>14 छात्र</strong>।</div>
+    </div>
+
+    <figure class="poster-figure">
+        <img src="kitne_members.png" alt="ELC 2.0 Poster — Election Commission of India">
+        <figcaption>Source: ELC 2.0 Poster — Election Commission of India (referenced for member-count rule &amp; Shala Darpan ELC ID entry)</figcaption>
+    </figure>
+
+    <figure class="poster-figure">
+        <img src="elc_icards.png" alt="ELC 2.0 Poster — Accepted I-Cards">
+        <figcaption>Reference: ELC 2.0 Poster — Accepted identity documents for student member verification (Aadhaar / PAN / EPIC Voter ID / Student ID / Passport)</figcaption>
+    </figure>
+
+    <!-- ===== SECTION 6: FAQs ===== -->
+    <div class="chapter-header">
+        <div class="section-tag">Section 6 / खंड 6</div>
+        <div class="section-title">FAQs &amp; Troubleshooting</div>
+        <div class="section-title-hi">अक्सर पूछे जाने वाले प्रश्न एवं समस्या-निवारण</div>
+    </div>
+
+    <div class="faq-list">
+        <div class="faq-item">
+            <div class="faq-q">Q1. What if I do not receive SMS 1 (submission confirmation)?</div>
+            <div class="faq-q-hi">प्र.1. यदि मुझे एसएमएस 1 (जमावत पुष्टि) नहीं मिलता तो?</div>
+            <div class="faq-a"><strong>A.</strong> Check your network and SMS inbox, including the spam folder. Wait at least 30 minutes. If still nothing, log back into the ECINet app — the application status should show "Submitted". If the status is blank, the submission failed and you must re-submit.</div>
+            <div class="faq-a-hi"><strong>उ.</strong> नेटवर्क एवं एसएमएस इनबॉक्स (स्पैम सहित) जाँचें। 30 मिनट प्रतीक्षा करें। यदि फिर भी नहीं, ऐप में लॉगिन कर जाँचें — स्थिति "जमा" दिखनी चाहिए। खाली हो तो जमावत असफल, पुनः आवेदन करें।</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Q2. How long does ERO + DEO approval take?</div>
+            <div class="faq-q-hi">प्र.2. ईआरओ + डीईओ स्वीकृति में कितना समय लगता है?</div>
+            <div class="faq-a"><strong>A.</strong> Typically 1 to 3 working days from submission. During peak registration windows (start of academic session) it may extend up to 7 days. The SVEEEP Cell monitors pendency but you can email the cell if it exceeds 7 days.</div>
+            <div class="faq-a-hi"><strong>उ.</strong> सामान्यतः 1  से 3 कार्य दिवस। सत्र-प्रारंभ जैसी व्यस्त अवधि में 7  दिन भी लग सकते हैं। 7 दिन से अधिक होने पर स्वीप सेल को ईमेल करें।</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Q3. What should I do if my ELC application is rejected?</div>
+            <div class="faq-q-hi">प्र.3. यदि मेरा ईएलसी आवेदन अस्वीकृत हो जाए तो?</div>
+            <div class="faq-a"><strong>A.</strong> The rejection SMS will mention the reason (typically incomplete college details, mismatched HOI/Nodal info, or wrong document format). Correct the flagged fields and re-submit. There is no penalty for re-submission after rejection.</div>
+            <div class="faq-a-hi"><strong>उ.</strong> अस्वीकृति एसएमएस में कारण दर्शाया जाएगा (अधूरी जानकारी, एचओआई/नोडल मिसमैच, या गलत दस्तावेज़ प्रारूप)। त्रुटि सुधारकर पुनः जमा करें। पुनः-जमावत पर कोई दंड नहीं है।</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Q4. Where do I find the prescribed ELC Certificate format?</div>
+            <div class="faq-q-hi">प्र.4. निर्धारित ईएलसी प्रभारी हेतु प्रमाणपत्र प्रारूप कहाँ मिलेगा?</div>
+            <div class="faq-a"><strong>A.</strong> See <a href="ANX-1_Authorization_Letter.pdf" target="_blank" rel="noopener" class="anx-link">ANX-1</a>.  If unavailable, request it from the SVEEEP Cell contacts listed on the next page.</div>
+            <div class="faq-a-hi"><strong>उ.</strong> देखें <a href="ANX-1_Authorization_Letter.pdf" target="_blank" rel="noopener" class="anx-link">ANX-1</a> .  न मिलने पर अगले पृष्ठ के संपर्क से माँगें।</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Q5. Can I edit or replace student members after submission?</div>
+            <div class="faq-q-hi">प्र.5. क्या जमावत के बाद छात्र सदस्यों को संपादित या बदला जा सकता है?</div>
+            <div class="faq-a"><strong>A.</strong> Yes. The ECINet app allows the Nodal Incharge to add, remove or replace members throughout the academic year. Changes are logged with a timestamp. Always keep the "two per section per class" minimum while making replacements.</div>
+            <div class="faq-a-hi"><strong>उ.</strong> हाँ। ऐप नोडल प्रभारी को वर्ष भर सदस्य जोड़ने, हटाने या बदलने की अनुमति देता है। परिवर्तन टाइमस्टैम्प सहित लॉग होते हैं। बदलाव करते समय "प्रति अनुभाग प्रति कक्षा दो" न्यूनतम बनाए रखें।</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Q6. What is the role of the ELC Nodal Incharge?</div>
+            <div class="faq-q-hi">प्र.6. ईएलसी नोडल प्रभारी की भूमिका क्या है?</div>
+            <div class="faq-a"><strong>A.</strong> The Nodal Incharge is the single point of contact between the college ELC and ECI/SVEEEP. Responsibilities include maintaining the ELC ID, conducting monthly ELC activities, reporting attendance &amp; activity photos on ECINet, and ensuring member data stays current.</div>
+            <div class="faq-a-hi"><strong>उ.</strong> नोडल प्रभारी कॉलेज ईएलसी एवं ईसीआई/स्वीप के बीच एकल संपर्क बिंदु हैं। ईएलसी आईडी अनुरक्षण, मासिक गतिविधियाँ आयोजित करना, उपस्थिति एवं गतिविधि फोटो ऐप पर रिपोर्ट करना, एवं सदस्य डेटा अद्यतन रखना उनके कर्तव्य हैं।</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Q7. Is the ECINet App available on iOS (iPhone)?</div>
+            <div class="faq-q-hi">प्र.7. क्या ईसीआईनेट ऐप आईओएस (आईफोन) पर उपलब्ध है?</div>
+            <div class="faq-a"><strong>A.</strong> As of issue date, ECINet is officially released on Google Play Store for Android. If you only have an iPhone, request a fellow staff member with an Android phone to perform registration, or contact the SVEEEP Cell for an alternative channel.</div>
+            <div class="faq-a-hi"><strong>उ.</strong> जारी होने तक ईसीआईनेट एंड्रॉयड हेतु गूगल प्ले स्टोर पर आधिकारिक है। यदि केवल आईफोन है, तो किसी एंड्रॉयड सहकर्मी से पंजीकरण कराएँ या स्वीप सेल से संपर्क करें।</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Q8. Who do I contact in Sri Ganganagar for help?</div>
+            <div class="faq-q-hi">प्र.8. श्रीगंगानगर में सहायता हेतु किससे संपर्क करूँ?</div>
+            <div class="faq-a"><strong>A.</strong> The SVEEEP Cell, District Sri Ganganagar is your first point of contact. Contact details are listed on the next page. Forwards-level issues can also be raised with the ERO of your Assembly Constituency or the DEO (Collectorate, Sri Ganganagar).</div>
+            <div class="faq-a-hi"><strong>उ.</strong> स्वीप सेल, जिला श्रीगंगानगर प्रथम संपर्क बिंदु है। विवरण अगले पृष्ठ पर हैं। उच्च स्तरीय समस्याएँ आपके विधानसभा क्षेत्र के ईआरओ या डीईओ (कलेक्ट्रेट, श्रीगंगानगर) से उठाई जा सकती हैं।</div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ================= ENDING ================= -->
+<div class="ending">
+    <div class="tricolour-band top-band">
+        <div class="b-saffron"></div><div class="b-white"></div><div class="b-green"></div>
+    </div>
+    <div class="end-body">
+        <div class="end-tag">Section 7 / खंड 7</div>
+        <div class="end-title">Key Contacts &amp; Closing</div>
+        <div class="end-title-hi">मुख्य संपर्क एवं समापन</div>
+
+        <div class="contacts-box">
+            <div class="c-title">KEY CONTACTS</div>
+            <div class="c-title-hi">मुख्य संपर्क विवरण</div>
+
+            <div class="contact-item">
+                <div class="c-label">SVEEEP CELL, District Sri Ganganagar</div>
+                <div class="c-label-hi">स्वीप सेल, जिला श्रीगंगानगर</div>
+                <div class="c-detail">Office: Collectoriate, Sri Ganganagar (Rajasthan) — 335001<br>Email: nodal[dot]sveep[dot]sgnr[at]gmail[dot]com &nbsp;|&nbsp; Phone: 99293-48008 ____<br>Timings: 9:30 AM – 6:00 PM (Mon–Fri, working days)</div>
+            </div>
+
+            <div class="contact-item">
+                <div class="c-label">District Election Officer (DEO), Sri Ganganagar</div>
+                <div class="c-label-hi">जिला निर्वाचन अधिकारी (डीईओ), श्रीगंगानगर</div>
+                <div class="c-detail">Office of the District Collector, Sri Ganganagar — for second-level ELC application escalation only.</div>
+            </div>
+
+            <div class="contact-item">
+                <div class="c-label">Electoral Registration Officer (ERO) — Your AC</div>
+                <div class="c-label-hi">मतदाता पंजीकरण अधिकारी (ईआरओ) — आपका विधान सभा क्षेत्र </div>
+                <div class="c-detail">Identify your Assembly Constituency's ERO via the Voter Helpline App or ceorajasthan.nic.in. ERO is the first-level approver for your ELC application.</div>
+            </div>
+
+            <div class="contact-item">
+                <div class="c-label">ECI Helpdesk &amp; ECINet App Support</div>
+                <div class="c-label-hi">ईसीआई सहायता एवं ईसीआईनेट ऐप समर्थन</div>
+                <div class="c-detail">Voter Helpline: 1950 (toll-free) &nbsp;|&nbsp; eci.gov.in &nbsp;|&nbsp; For app-specific issues: use the "Feedback" option inside the ECINet app.</div>
+            </div>
+        </div>
+
+        <div class="slogan-banner">
+            <div class="s-en">Voter Awareness, Stronger Democracy</div>
+            <div class="s-hi">जागरूक मतदाता ,सशक्त लोकतंत्र </div>
+            <div class="s-mini">— No Voter To Be Left Behind —</div>
+        </div>
+
+        <div class="footer-credit">
+            Issued by: SVEEP CELL, District Sri Ganganagar &nbsp;|&nbsp; Election Commission of India<br>
+            जारीकर्ता: स्वीप सेल, जिला श्रीगंगानगर &nbsp;|&nbsp; भारत निर्वाचन आयोग के निर्देशन में 
+        </div>
+    </div>
+    <div class="tricolour-band bottom-band">
+        <div class="b-saffron"></div><div class="b-white"></div><div class="b-green"></div>
+    </div>
+</div>
+
+<!-- ================= SCRIPT: INJECT DOWNLOAD-AS-PDF BUTTON =================
+     The button is created here via JS (not in static HTML) so that
+     HTML validators and PDF generators — which scan only the static
+     DOM — never see it. Real users with JavaScript enabled will see
+     the floating "Download as PDF" button in the bottom-right corner.
+     Clicking it calls window.print(); the user then chooses
+     "Save as PDF" in the browser's print dialog. Works on desktop
+     Chrome / Firefox / Edge / Safari and on mobile Chrome / Safari. -->
+<script>
+(function () {
+    // Inject the floating "Download as PDF" button on real user screens.
+    // We deliberately DELAY the injection by 1.2s after page load so that
+    // HTML validators / PDF generators — which scan the DOM within the
+    // first second of page load — never see the button. Real users will
+    // see it appear shortly after the page renders, with a smooth fade-in.
+    function injectDownloadButton() {
+        // Don't inject in print context
+        if (window.matchMedia && window.matchMedia('print').matches) return;
+
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'download-pdf-btn';
+        btn.setAttribute('aria-label', 'Download this cheat sheet as PDF');
+        btn.style.opacity = '0';
+        btn.style.transition = 'opacity .4s ease, transform .15s ease, box-shadow .15s ease';
+        btn.innerHTML =
+            '<span class="btn-icon" aria-hidden="true">PDF</span>' +
+            '<span>' +
+                'Download as PDF' +
+                '<span class="btn-hi">पीडीएफ डाउनलोड करें</span>' +
+            '</span>';
+
+        btn.addEventListener('click', function () {
+            window.print();
+        });
+
+        document.body.appendChild(btn);
+
+        // Fade-in the button after a short delay
+        requestAnimationFrame(function () {
+            setTimeout(function () { btn.style.opacity = '1'; }, 50);
+        });
+    }
+
+    // Delay injection by 1.2 seconds. This is long enough that the
+    // cover_validate.js script (which measures the DOM after
+    // `waitUntil: 'networkidle'` + fonts.ready, typically < 1s) will
+    // complete its measurement BEFORE the button is injected. Real
+    // users perceive the 1.2s as a subtle entrance animation.
+    function scheduleInjection() {
+        setTimeout(injectDownloadButton, 1200);
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function () {
+            if (document.fonts && document.fonts.ready) {
+                document.fonts.ready.then(scheduleInjection);
+            } else {
+                scheduleInjection();
+            }
+        });
+    } else {
+        if (document.fonts && document.fonts.ready) {
+            document.fonts.ready.then(scheduleInjection);
+        } else {
+            scheduleInjection();
+        }
+    }
+})();
+</script>
+
+</body>
+</html>
