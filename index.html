@@ -618,6 +618,54 @@ html, body {
     break-inside: avoid;
     text-align: center;
 }
+    /* ---------- Clickable poster overlay (YouTube play button) ---------- */
+.poster-link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    transition: opacity .2s ease, transform .2s ease;
+}
+.poster-link:hover,
+.poster-link:focus {
+    opacity: .9;
+    transform: scale(1.01);
+}
+.poster-link img {
+    cursor: pointer;
+}
+/* Red YouTube-style play button overlay (appears on hover) */
+.poster-link::before {
+    content: '▶';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 72px;
+    height: 52px;
+    background: rgba(255, 0, 0, .88);
+    color: #fff;
+    font-size: 26px;
+    line-height: 52px;
+    text-align: center;
+    border-radius: 14px;
+    opacity: 0;
+    transition: opacity .25s ease, transform .25s ease;
+    pointer-events: none;
+    z-index: 2;
+    box-shadow: 0 4px 16px rgba(0,0,0,.45);
+    font-family: Arial, sans-serif;
+    padding-left: 6px;   /* visual centering of play triangle */
+}
+.poster-link:hover::before,
+.poster-link:focus::before {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+/* On touch devices (no hover), always show a faint play button */
+@media (hover: none) {
+    .poster-link::before {
+        opacity: .75;
+    }
+}
 .poster-figure img {
     max-width: 100%;
     max-height: 430px;
@@ -1322,14 +1370,18 @@ html, body {
         <div class="ex-text">School with <strong>Class 11 — 3 sections</strong> &amp; <strong>Class 12 — 4 sections</strong> → Total sections = 3 + 4 = <strong>7</strong> → ELC members = 7 × 2 = <strong>14 students</strong>.<br>कक्षा 11 में 3 अनुभाग एवं कक्षा 12 में 4 अनुभाग → कुल अनुभाग = 7 → ईएलसी सदस्य = 7 × 2 = <strong>14 छात्र</strong>।</div>
     </div>
 
-    <figure class="poster-figure">
-        <img src="posters/kitne_members.png" alt="ELC 2.0 Poster — Election Commission of India">
-        <figcaption>Source: ELC 2.0 Poster — Election Commission of India (referenced for member-count rule &amp; Shala Darpan ELC ID entry)</figcaption>
+       <figure class="poster-figure">
+        <a href="https://youtu.be/SsOzAYq7_fg" target="_blank" rel="noopener" class="poster-link" aria-label="Watch tutorial: ELC member count rule (opens YouTube in new tab)">
+            <img src="posters/kitne_members.png" alt="ELC 2.0 Poster — Election Commission of India">
+        </a>
+        <figcaption>▶ <a href="https://youtu.be/SsOzAYq7_fg" target="_blank" rel="noopener">Click poster to watch tutorial</a> — Source: ELC 2.0 Poster, Election Commission of India</figcaption>
     </figure>
 
-    <figure class="poster-figure">
-        <img src="posters/elc_icards.png" alt="ELC 2.0 Poster — Accepted I-Cards">
-        <figcaption>Reference: ELC 2.0 Poster — Accepted identity documents for student member verification (Aadhaar / PAN / EPIC Voter ID / Student ID / Passport)</figcaption>
+          <figure class="poster-figure">
+        <a href="https://youtu.be/dp6T8Is27LA" target="_blank" rel="noopener" class="poster-link" aria-label="Watch tutorial: Accepted I-Cards for ELC (opens YouTube in new tab)">
+            <img src="posters/elc_icards.png" alt="ELC 2.0 Poster — Accepted I-Cards">
+        </a>
+        <figcaption>▶ <a href="https://youtu.be/dp6T8Is27LA" target="_blank" rel="noopener">Click poster to watch tutorial</a> — Reference: ELC 2.0 Poster, accepted identity documents for student member verification (Aadhaar / PAN / EPIC Voter ID / Student ID / Passport)</figcaption>
     </figure>
 
     <!-- ===== SECTION 6: FAQs ===== -->
